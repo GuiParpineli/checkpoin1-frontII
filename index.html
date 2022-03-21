@@ -2,51 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
     <title>Biblioteca de Jogos</title>
 </head>
 
 <body>
-    <div class="card-group">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-            
+  <body>
+
+    <div class="container">
+      <h1>Reviews de Games</h1>
+    <a href="#scroll">
+       <button type="button">Inserir sua analise</button>
+    </a>
     </div>
+  
+    <div class="container-main">
+      
+      
+    </div>
+    <div class= 'container-form'> 
+
+    <h2 id="scroll">Faça aqui seu review</h1>    
+    <form action="https://" method="post">
+        <div>
+        <label class ='title' for="title">Titulo</label>
+        </div>
+        <input class = 'title_card' type="text" id="title" placeholder="Nome do Jogo">
+
+        <div>
+        <label class ='title' for="title">Imagem</label>
+        </div>
+        <input class = 'url_imagem' type="text" id="title" placeholder="Inserir URL da imagem">
+
+        <div class="label-coment">
+        <label class= 'coment'for="coment" >Comentario</label>
+        </div>
+       <textarea  class= 'coment-box' id="coment" rows="10" cols= "40" placeholder="Seu review"></textarea>
+
+        <div>    
+        <button class ='enviar' type="submit"> Enviar </button>    
+        <button type="reset">Reiniciar</button>
+        </div>
+
+    </div>
+    </form>
+
+    <script src='/scripts/main.js'></script>
+
 </body>
 
 </html>
