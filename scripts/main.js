@@ -13,6 +13,7 @@
 // const(titulo.value, coment.value,image.value)
 
 let enviar = document.querySelector('.enviar');
+let reset = document.querySelector('.reset');
 
 enviar.addEventListener('click', a => {
 
@@ -47,5 +48,8 @@ enviar.addEventListener('click', a => {
         item.classList.add("item");
 
         document.querySelector('.container-main').appendChild(item);
+
+        document.querySelector('form').reset();
 });
+
 
