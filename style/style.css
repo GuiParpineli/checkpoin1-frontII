@@ -1,67 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=Open+Sans:wght@300;400&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bungee', cursive;
 }
 
 body {
-    background-color: rgb(39, 39, 39);
-}
-
-.item:hover {
-  box-shadow: 0 8px 16px 0 rgba(164, 6, 255, 0.548);
-}
-
-
-
-body {
+  background-color: rgb(39, 39, 39);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
 
-h1 {
-  color: white;
-  font-size: 50px;/* Aumentei mais o tamanho da fonte */
-  line-height: 56px;/* Ajuste altura da linha */
-  font-weight: bold;/*vai deixar a fonte em negrito*/
-  margin-top: 0;
-  margin-bottom: 10px;/* Ajuste da margem inferior */
-  text-align: center;
-}
-h2 {
-  color: white;
-  line-height: 56px;/* Ajuste altura da linha */
-  font-weight: bold;/*vai deixar a fonte em negrito*/
-  margin-top: 0;
-  margin-bottom: 10px;/* Ajuste da margem inferior */
-  text-align: center;
-}
-
-
-.container {
-  text-align: center;  
-  width: 80%;
-  margin: 2em 10%;
-}
-
-label {  
-  color: white;
-  text-align: center;  
-  width: 80%;
-  margin: 2em 10%;
-}
-
-input {
-  padding: 10px;
-  border-radius: 10px;
-}
-
-textarea {
-  border-radius: 10px;
-  width: 50%
+.item:hover {
+  box-shadow: 0 8px 16px 0 rgba(164, 6, 255, 0.548);
 }
 
 .item {
@@ -91,6 +44,58 @@ textarea {
   color: rgb(230, 230, 230);
 }
 
+h1 {
+  color: white;
+  font-size: 50px;/* Aumentei mais o tamanho da fonte */
+  line-height: 56px;/* Ajuste altura da linha */
+  font-weight: bold;/*vai deixar a fonte em negrito*/
+  margin-top: 0;
+  margin-bottom: 10px;/* Ajuste da margem inferior */
+  text-align: center;
+}
+h2 {
+  color: white;
+  line-height: 56px;/* Ajuste altura da linha */
+  font-weight: bold;/*vai deixar a fonte em negrito*/
+  margin-top: 0;
+  margin-bottom: 10px;/* Ajuste da margem inferior */
+  text-align: center;
+}
+
+
+.container {
+  text-align: center;  
+  width: 80%;
+  margin: 2em 10%;
+}
+
+.container-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2em 10%;
+}
+
+label {  
+  color: white;
+  text-align: center;  
+  width: 80%;
+  margin: 2em 10%;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  border-radius: 10px;
+  width: 50%
+}
+
+
+
 .enviar:hover{
   transform: scale(110%);
 }
@@ -98,13 +103,12 @@ textarea {
 .enviar , .reset {
     margin: 5px;
     border-radius: 10px;
-    width: 30%;   
+    width: 35%;   
     height:50px;
     background-color: blueviolet;
     color: white;
     font-weight: bold;
-    font-size: 16px;
-    
+    font-size: 16px;  
 }
 
 .insert-analise {
@@ -118,20 +122,10 @@ textarea {
   font-size: 16px;
 }
 
-.container-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
-    margin: 2em 10%;
-  }
-
-
 @media (min-width: 720px) {
 
   .item {
     transform: scale(70%);
-    
   }
 
   .container-main{
@@ -139,8 +133,7 @@ textarea {
     position: relative;
     width: 80%;
     left: 300px;
-    margin: 0;  
-      
+    margin: 0;   
   }
 
   .container-form{
@@ -165,6 +158,5 @@ textarea {
     width: 15%;
     font-size: 16px;
   }
-
-
+  
 }
